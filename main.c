@@ -11,7 +11,7 @@ int cmp(const void * a, const void * b)
     return 0;
 }
 
-int inverse_cmp(const void * a, const void * b) /// for sorting in reverse order in fuction check()
+int inverse_cmp(const void * a, const void * b) /// for sorting in reverse order in fuction generate_double_array()
 {
     if (fabs(*(const double *)a) > fabs(*(const double *)b)) return -1;
     if (fabs(*(const double *)a) < fabs(*(const double *)b)) return 1;
@@ -161,7 +161,8 @@ void test(int n)
 
 int main()
 {
-    int n; scanf("%d", &n);
+    int n;
+    scanf("%d", &n);
     test(n);
     return 0;
 }
